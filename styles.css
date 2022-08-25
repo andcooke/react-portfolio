@@ -1,11 +1,40 @@
+:root {
+  --green: rgb(44, 132, 85); 
+}
+
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+
+
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .footer {
-  background: green;
+  background: var(--green);
   bottom: 0;
   position: absolute;
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name,
+.icons {
+  padding: 0 50px; 
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.icons svg {
+  font-size: 3rem;
+  color: white;
+  padding: 0 2rem;
 }

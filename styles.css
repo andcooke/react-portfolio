@@ -1,5 +1,6 @@
 :root {
-  --green: rgb(44, 132, 85); 
+  --green: rgb(34, 135, 93); 
+  --blue: rgb(15, 106, 175);
 }
 
 html {
@@ -12,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background:rgb(15, 106, 175)
 }
 
 .footer {
@@ -24,17 +26,24 @@ body {
   align-items: center;
 }
 
-.name,
-.icons {
-  padding: 0 50px; 
-}
 
 .name {
-  font-size: 2rem;
+  padding: 0 3rem; 
+  color: white;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icons {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icons svg {
   font-size: 3rem;
   color: white;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }

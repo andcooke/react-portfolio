@@ -9,7 +9,6 @@ html {
   font-size: 62.5%;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -28,7 +27,7 @@ body {
 }
 
 
-.name {
+.footer-name {
   padding: 0 3rem; 
   color: white;
   font-weight: lighter;
@@ -38,13 +37,13 @@ body {
 }
 
 
-.icons {
+.footer-icons {
   padding: 0 2rem;
   display: flex;
   justify-content: flex-end;
 }
 
-.icons svg {
+.footer-icons svg {
   font-size: 3rem;
   color: white;
   padding: 0 1rem;

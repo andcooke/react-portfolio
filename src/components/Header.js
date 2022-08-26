@@ -1,6 +1,8 @@
 import React from 'react';
 
-export default function Header() {
+function Header(currentPage, handlePageChange) {
+
+
 
   return (
     <div>
@@ -8,3 +10,5 @@ export default function Header() {
     </div>
   )
 }
+
+export default Header;

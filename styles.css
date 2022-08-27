@@ -3,7 +3,7 @@
   --blue: rgb(15, 106, 175);
   --brown: rgb(134, 96, 68);
   --yellow: rgb(213, 202, 100);
-  --red: rgb(195, 80, 80);
+  --red: rgb(197, 74, 74);
   --purple: rgb(168, 78, 171);
 }
 
@@ -28,6 +28,7 @@ a {
   color: inherit;
 }
 
+
 .header {
   position: absolute;
   width: 100%;
@@ -44,13 +45,14 @@ a {
   word-spacing: 10rem;
   position: absolute;
   left: 25%;
+  border-bottom: 3px dotted black;
 }
 
 
 .navbar {
   right: 3%;
-  top: 5%;
-  position: absolute;
+  top: 2.5%;
+  position: fixed;
 }
 
 .link-container {
@@ -69,27 +71,43 @@ a {
 }
 
 .link-container li:first-child {
-  border-bottom: 2px solid var(--yellow);
-}
-
-.link-container li:nth-child(2) {
   border-bottom: 2px solid var(--red);
 }
 
-.link-container li:nth-child(3) {
-  border-bottom: 2px solid var(--purple);
-}
-
-.link-container li:nth-child(4) {
+.link-container li:nth-child(2) {
   border-bottom: 2px solid var(--green);
 }
 
+.link-container li:nth-child(3) {
+  border-bottom: 2px solid var(--yellow);
+}
 
+.link-container li:nth-child(4) {
+  border-bottom: 2px solid var(--purple);
+}
+/* 
+.circle {
+  width: 800px;
+  height: 800px;
+  background: var(--red);
+  position: absolute;
+  margin: 0 auto;
+  left: 50rem;
+  top: 20rem;
+  border-radius: 50%;
+  filter: blur(200px);
+} */
+
+
+.footer-container {
+  position: relative;
+  min-height: 100%;
+}
 
 .footer {
   background: var(--green);
   bottom: 0%;
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;

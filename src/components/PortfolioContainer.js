@@ -28,6 +28,7 @@ export default function PortfolioContainer () {
 
   return (
     <div>
+      <div className="circle"></div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       {renderPage()}
       <Footer />

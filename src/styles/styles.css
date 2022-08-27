@@ -14,6 +14,7 @@
 html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
+  overflow: hidden; /* prevents scrolling */
 }
 
 body {
@@ -21,6 +22,13 @@ body {
   padding: 0;
   width: 100%;
   background: var(--blue);
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 a {
@@ -86,7 +94,7 @@ a {
 .link-container li:nth-child(4) {
   border-bottom: 2px solid var(--purple);
 }
-/* 
+
 .circle {
   width: 800px;
   height: 800px;
@@ -97,7 +105,7 @@ a {
   top: 20rem;
   border-radius: 50%;
   filter: blur(200px);
-} */
+}
 
 .about-container {
   font-size: 3rem;

@@ -1,10 +1,10 @@
 :root {
-  --green: rgb(34, 135, 93); 
-  --blue: rgb(15, 106, 175);
-  --brown: rgb(134, 96, 68);
-  --yellow: rgb(213, 202, 100);
-  --red: rgb(197, 74, 74);
-  --purple: rgb(168, 78, 171);
+  --green: #22875d; 
+  --blue: #0f6aaf;
+  --brown: #866044;
+  --yellow: #d5ca64;
+  --red: #c54a4a;
+  --purple: #a84eab;
 }
 
 ::selection {
@@ -46,13 +46,14 @@ a {
   position: absolute;
   left: 25%;
   border-bottom: 3px dotted black;
+  z-index: 9998;
 }
-
 
 .navbar {
   right: 3%;
   top: 2.5%;
   position: fixed;
+  z-index: 9999;
 }
 
 .link-container {
@@ -98,6 +99,27 @@ a {
   filter: blur(200px);
 } */
 
+.about-container {
+  font-size: 3rem;
+  position: absolute;
+  width: 90%;
+  top: 30%;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  color: white;
+  display: flex;
+}
+
+.about-container img {
+  position: relative;
+  width: 20%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.about-container p {
+  padding-left: 3rem;
+}
 
 .footer-container {
   position: relative;

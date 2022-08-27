@@ -1,18 +1,11 @@
 import React from 'react';
-
+import avatar from '../../images/avater-standin.png'
 
 export default function About() {
   return (
-    <div>
-      <h1>About</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+    <div className="about-container">
+      <img src={avatar} alt="a stand-in for a later drawing of myself"/>
+      <p>Hello, I don't really look like this. <br/><br/>I made this drawing to stand-in for a drawing I will make of myself later, so it just has to do for now. <br/><br/> Anyway, I'm into art, and design, and reading, and movies, and people. (Not necessarily in that order.) I've been learning software development lately, and am trying to get better at it. This is where I'm at as of right now. </p>
     </div>
   );
 }

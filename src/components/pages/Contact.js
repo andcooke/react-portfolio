@@ -8,7 +8,7 @@ export default function Contact() {
         <input className="email-input" id="contact-email" placeholder='email'></input>
       </div>
       <div className="message-content">
-        <input className="subject-input" id="contact-subject" placeholder='subject'></input>
+        <input className="subject-input" id="contact-subject" placeholder='subiect'></input>
         <textarea className="message-input" id="contact-message" placeholder='message'></textarea>
       </div>
       <div className="send-button">

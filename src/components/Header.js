@@ -15,7 +15,7 @@ function Header({ currentPage, handlePageChange }) {
             <a 
               href="#about" 
               onClick={() => handlePageChange('About')}
-              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
+              className={currentPage === 'About' ? 'red-underline' : 'black-underline'}>
                 about
             </a>
           </li>
@@ -23,21 +23,21 @@ function Header({ currentPage, handlePageChange }) {
             <a 
               href="#portfolio"
               onClick={() => handlePageChange('Portfolio')}
-              className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
+              className={currentPage === 'Portfolio' ? 'green-underline' : 'black-underline'}>
                 portfolio
             </a>
           </li>
           <li>
             <a href="#contact"
               onClick={() => handlePageChange('Contact')}
-              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+              className={currentPage === 'Contact' ? 'yellow-underline' : 'black-underline'}>
                 contact
             </a>
           </li>
           <li>
             <a href="#résumé"
               onClick={() => handlePageChange('Resume')}
-              className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
+              className={currentPage === 'Resume' ? 'purple-underline' : 'black-underline'}>
                 résumé
             </a>
           </li>

@@ -231,6 +231,10 @@ button {
   box-shadow: 2px 2px 1px var(--black);
 }
 
+.hidden-toast {
+  display: none;
+}
+
 .footer-container {
   position: relative;
   min-height: 100%;

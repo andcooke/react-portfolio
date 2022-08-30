@@ -142,6 +142,23 @@ a {
   padding-left: 3rem;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 30px;
+  background: var(--green);
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 
 .contact-form {
   width: 50%;

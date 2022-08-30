@@ -22,7 +22,8 @@
 html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
-  overflow: hidden; /* prevents scrolling */
+  /* prevents scrolling */
+  overflow: hidden; 
   box-sizing: border-box;
 }
 
@@ -264,10 +265,42 @@ button {
   box-shadow: 2px 2px 1px var(--black);
 }
 
-
-
 .hidden-toast {
   display: none;
+}
+
+.resume-container {
+  position: absolute;  
+}
+
+.engineer-title {
+  text-align: center;
+  width: 100%;
+}
+
+.skills-container {
+  width: 33%;
+}
+
+.experience-container {
+  width: 33%;
+}
+
+.education-container {
+  width: 33%;
+}
+
+.download-button {
+  width: fit-content;
+  height: 50px;
+  padding: 0 2vw;
+  background: var(--purple);
+  border-radius: 10px;
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 2.5rem;
 }
 
 .footer-container {

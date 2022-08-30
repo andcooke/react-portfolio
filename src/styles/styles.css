@@ -13,6 +13,8 @@
   background: var(--brown);
 }
 
+
+
 html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
@@ -49,6 +51,7 @@ a {
   justify-content: center;
 }
 
+
 .initials {
   font-size: 25rem;
   line-height: 100%;
@@ -56,7 +59,7 @@ a {
   word-spacing: 10rem;
   position: absolute;
   left: 25%;
-  border-bottom: 3px dotted black;
+  border-bottom: 3px dotted var(--black);
   z-index: 9998;
 }
 
@@ -145,18 +148,24 @@ a {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-container a {
+  margin: 1.5vw;
 }
 
 .project {
-  padding: 30px;
   background: var(--green);
-  width: 20px;
-  height: 20px;
-  margin: 20px;
+  width: 23vw;
+  height: 13vw;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   display: flex;
+  font-size: 2vw;
+  color: var(--white);
 }
 
 

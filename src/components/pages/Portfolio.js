@@ -32,13 +32,14 @@ export default function Portfolio() {
 
   return (
       <div className="portfolio-container">
-        {projects.map((item) => (
-          <div className="project">
-            <a href={item.link}>
-              <p>{item.name}</p>
-            </a>
-          </div>
-        ))}
+        {projects.map((item, i) => (
+          <a href={item.link}>
+            <div className="project" key={i}>
+                <p>{item.name}</p>
+            </div>
+          </a>
+      ))}
       </div> 
+
   )
 }

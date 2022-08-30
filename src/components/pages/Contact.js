@@ -20,6 +20,10 @@ export default function Contact() {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   }
 
+  function hideToast () {
+    setHiddenState(true);
+  }
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -33,6 +37,7 @@ export default function Contact() {
     });
     setFormState({user_name: "", user_email: "", subject: "", message: ""})
     setHiddenState(false);
+    setTimeout(hideToast, 4000)
   }
 
   return (
@@ -49,8 +54,9 @@ export default function Contact() {
       <input type="submit" value="send" id="send-email"/>
     </div>
     <div className= { hiddenState ? "hidden-toast" : ""}>
-      Sent
+        <p>sent! thanks!</p>
     </div>
+
   </form>
   );
 }

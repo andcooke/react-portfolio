@@ -5,7 +5,7 @@ function Header({ currentPage, handlePageChange }) {
   return (
     <div className="header">
 
-      <div className="header-initials">
+      <div>
         <h1 className="initials">A. C.</h1>
       </div>
 

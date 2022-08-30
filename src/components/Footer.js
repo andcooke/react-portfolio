@@ -5,7 +5,7 @@ function Footer () {
   return (
     <div className="footer">
       <div className="footer-name">
-        <p>andrew cooke</p>
+        <p>-andrew cooke</p>
       </div>
   
       <div className="footer-icons">

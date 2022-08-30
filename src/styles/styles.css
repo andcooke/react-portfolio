@@ -42,14 +42,14 @@ a {
 }
 
 
-.header {
+/* .header {
   position: absolute;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
+} */
 
 
 .initials {
@@ -57,10 +57,11 @@ a {
   line-height: 100%;
   margin: 0 0;
   word-spacing: 10rem;
-  position: absolute;
-  left: 25%;
+  width:fit-content;
+  position: relative;
+  left: 30%;
   border-bottom: 3px dotted var(--black);
-  z-index: 9998;
+  z-index: 999;
 }
 
 .navbar {
@@ -169,6 +170,8 @@ a {
 }
 
 
+
+
 .contact-form {
   width: 50%;
   position: absolute;
@@ -241,11 +244,18 @@ button {
   padding: 0 5px;
 }
 
+.send-button p {
+  padding-right: 11.5vw;
+  color: var(--yellow);
+  font-size: 2rem;
+}
+
 .send-button input {
   background: var(--yellow);
   border: none;
   padding: 7.5px 30px;
   border-radius: 10px;
+  height: 50px;
   font-size: 3rem;
 }
 
@@ -259,6 +269,14 @@ button {
 
 .hidden-toast {
   display: none;
+}
+
+.toast-font {
+  font-size: 6rem;
+  padding-bottom: 600px;
+  color: green;
+  display: flex;
+  
 }
 
 .footer-container {

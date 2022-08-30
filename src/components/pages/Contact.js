@@ -51,12 +51,9 @@ export default function Contact() {
       <textarea required name="message" type="text" value={message} className="message-input" id="contact-message" placeholder='message' onChange={handleChange}></textarea>
     </div>
     <div className="send-button">
+      <p className= { hiddenState ? "hidden-toast" : ""}>sent! thanks!</p>
       <input type="submit" value="send" id="send-email"/>
     </div>
-    <div className= { hiddenState ? "hidden-toast" : ""}>
-        <p>sent! thanks!</p>
-    </div>
-
   </form>
   );
 }

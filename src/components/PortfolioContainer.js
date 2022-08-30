@@ -28,9 +28,11 @@ export default function PortfolioContainer () {
 
   return (
     <div>
-      <div className="circle">
+      <div className="red-circle">
         <div className="inner-circle"></div>
       </div>
+      <div className="purple-circle"></div>
+      <div className="yellow-circle"></div>
       <div className="header-container">
         <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       </div>

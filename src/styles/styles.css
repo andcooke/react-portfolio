@@ -13,6 +13,10 @@
   background: var(--brown);
 }
 
+::placeholder {
+  color: var(--red);
+  opacity: 50%;
+}
 
 
 html {
@@ -57,16 +61,18 @@ a {
   line-height: 100%;
   margin: 0 0;
   word-spacing: 6rem;
-  width:fit-content;
+  width: fit-content;
   position: relative;
-  left: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
   color: var(--black);
   border-bottom: 3px dotted var(--black);
   z-index: 999;
 }
 
+
 .navbar {
-  right: 3%;
+  right: 5%;
   top: 2.5%;
   position: fixed;
   z-index: 9999;
@@ -102,7 +108,7 @@ a {
   color: var(--yellow)
 }
 
-.purple-underline {
+.white-underline {
   border-bottom: 2px solid var(--white);
   color: var(--white);
 }
@@ -162,7 +168,7 @@ a {
 .contact-form {
   width: 50%;
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 25%;
 }
 
@@ -258,6 +264,8 @@ button {
   box-shadow: 2px 2px 1px var(--black);
 }
 
+
+
 .hidden-toast {
   display: none;
 }
@@ -303,17 +311,34 @@ button {
 }
 
 @keyframes circle {
-  0% {top: 10%; left: 0;}
-  25% {top: 0%; left: 50%;}
-  50% {top: 20%; left: 100%;}
-  75% {top: 50%; left: 50%;}
-  100% {top:10%; left: 0;}
+  0% {top: 10%; left: 0; transform: rotate(0);}
+  25% {top: 0%; left: 50%; transform: rotate(15deg);}
+  50% {top: 20%; left: 100%; transform: rotate(-30deg);}
+  75% {top: 50%; left: 50%; transform: rotate(-10deg);}
+  100% {top:10%; left: 0; transform: rotate(0);}
+}
+
+@keyframes coolcircle {
+  0% {top: 10%; left: 80%;}
+  13% {top: 0%; left: 46%;}
+  26% {top: 20%; left: -20%;}
+  70% {top: 50%; left: 30%;}
+  100% {top: 10%; left: 80%;}
+}
+
+@keyframes warmcircle {
+  0% {top: 90%; left: 0%;}
+  25% {top: -80%; left: -30%;}
+  50% {top: -80%; left: 40%;}
+  75% {top: -50%; left: 90%;}
+  99% {top: 120%; left: 100%;}
+  100% {top: 90%; left: 20%;}
 }
 
 
-.circle {
-  width: 1000px;
-  height: 1000px;
+.red-circle {
+  width: 2000px;
+  height: 2000px;
   background: var(--red);
   position: absolute;
   margin: 0 auto;
@@ -321,15 +346,39 @@ button {
   top: 20rem;
   border-radius: 50%;
   filter: blur(200px);
-  z-index: -9999;
-  animation-name: circle;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
+  z-index: -9997;
+  animation: circle 60s infinite;
 }
 
 .inner-circle {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background: var(--yellow);
+}
+
+.purple-circle {
+  left: 20rem;
+  top: 5rem;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--purple);
+  animation: coolcircle 80s infinite;
+  filter: blur(120px);
+  z-index: -9999;
+}
+
+.yellow-circle {
+  left: 0rem;
+  top: 0rem;
+  width: 1400px;
+  height: 1400px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--yellow);
+  animation: warmcircle 300s infinite;
+  filter: blur(400px);
+  z-index: -9998;
 }

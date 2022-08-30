@@ -37,7 +37,7 @@ function Header({ currentPage, handlePageChange }) {
           <li>
             <a href="#résumé"
               onClick={() => handlePageChange('Resume')}
-              className={currentPage === 'Resume' ? 'purple-underline' : 'black-underline'}>
+              className={currentPage === 'Resume' ? 'white-underline' : 'black-underline'}>
                 résumé
             </a>
           </li>

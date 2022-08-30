@@ -35,7 +35,7 @@ export default function Portfolio() {
         {projects.map((item, i) => (
           <a href={item.link}>
             <div className="project" key={i}>
-                <p>{item.name}</p>
+              <p>{item.name}</p>
             </div>
           </a>
       ))}

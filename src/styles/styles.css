@@ -275,28 +275,77 @@ button {
 
 .engineer-title {
   text-align: center;
+  height: 2vw;
   width: 100%;
+  margin-top: -1vw;
+}
+
+.engineer-title h2 {
+  font-size: 3.5rem;
+  color: var(--white);
+}
+
+.attributes {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-header {
+  justify-content: center;
+  display: flex;
+  height: 6rem;
+  font-size: 2rem;
+  border-bottom: 2px dotted var(--black);
 }
 
 .skills-container {
   width: 33%;
+  margin: 0 2vw;
 }
 
 .experience-container {
   width: 33%;
+  margin: 0 2vw;
+}
+
+.experience p {
+  font-size: 2rem;
+  margin: .75rem 0;
+}
+
+.experience p:first-child {
+  margin-top: 2rem;
+}
+
+.experience p:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+
+.experience li {
+  font-size: 1.8rem;
+  line-height: 125%;
+  border-bottom: 1px dotted var(--white);
+  padding: 5px 0;
+  list-style: none;
+}
+
+.experience li:last-child {
+  border-bottom: none;
 }
 
 .education-container {
   width: 33%;
+  margin: 0 2vw;
 }
 
 .download-button {
   width: fit-content;
   height: 50px;
   padding: 0 2vw;
-  background: var(--purple);
+  background: var(--white);
   border-radius: 10px;
-  color: var(--white);
+  color: var(--purple);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -343,12 +392,16 @@ button {
   color: var(--white);
 }
 
+.right-text {
+  text-align: right;
+}
+
 @keyframes circle {
-  0% {top: 10%; left: 0; transform: rotate(0);}
+  0% {top: 10%; left: -20%; transform: rotate(0);}
   25% {top: 0%; left: 50%; transform: rotate(15deg);}
   50% {top: 20%; left: 100%; transform: rotate(-30deg);}
   75% {top: 50%; left: 50%; transform: rotate(-10deg);}
-  100% {top:10%; left: 0; transform: rotate(0);}
+  100% {top:10%; left: -20%; transform: rotate(0);}
 }
 
 @keyframes coolcircle {

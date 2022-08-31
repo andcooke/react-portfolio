@@ -1,5 +1,9 @@
 import React from 'react';
 import resume from '../../images/Andrew Cooke Resume.pdf';
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact } from 'react-icons/fa';
+import { SiHandlebarsdotjs, SiMysql, SiGraphql, SiMongodb, SiSequelize, SiExpress } from 'react-icons/si';
+import { IoLogoNodejs } from 'react-icons/io';
+import { DiJavascript1, DiJqueryLogo, DiHeroku } from 'react-icons/di'
 
 
 export default function Resume() {
@@ -15,6 +19,27 @@ export default function Resume() {
         <div className="skills-container">
           <div className="resume-header">
             <h2>skills</h2>
+          </div>
+
+          <div className="skills">
+            <div className="front-end">
+              <FaHtml5/>
+              <FaCss3Alt/>
+              <DiJavascript1/>
+              <DiJqueryLogo/>
+              <FaBootstrap/>
+              <SiHandlebarsdotjs/>
+              <FaReact/>
+            </div>
+            <div className="back-end">
+              <SiMysql/>
+              <SiSequelize/>
+              <SiGraphql/>
+              <SiMongodb/>
+              <IoLogoNodejs/>
+              <SiExpress/>
+              <DiHeroku/>
+            </div>
           </div>
         </div>
 

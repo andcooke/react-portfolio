@@ -353,6 +353,18 @@ textarea:focus, input:focus {
   margin: 0 2vw;
 }
 
+.education p {
+  margin: .75rem 0;
+}
+
+.education p:first-child {
+  margin-top: 2rem;
+}
+
+.education p:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
 .resume-button {
   width: 100%;
   display: flex;

@@ -68,9 +68,11 @@ export default function Resume() {
             <h2>education</h2>
           </div>
           <div className="education">
-            <p><b>UT Austin Boot Camp</b><br></br><i>Full-Stack Coding Immersive Program</i> - 2022</p>
+            <p><b>UT Austin Boot Camp</b></p>
+            <p><i>Full-Stack Coding Immersive Program</i> - 2022</p>
 
-            <p><b>Sam Houston State University</b><br></br><i>Bachelor of Fine Arts - Photography - Cum Laude </i></p>
+            <p><b>Sam Houston State University</b></p>
+            <p><i>Bachelor of Fine Arts - Photography - Cum Laude </i></p>
           </div>
 
           <div className="resume-button">

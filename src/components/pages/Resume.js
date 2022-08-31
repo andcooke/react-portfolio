@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../images/resume.pdf';
+import resume from '../../images/Andrew Cooke Resume.pdf';
 
 
 export default function Resume() {
@@ -43,15 +43,13 @@ export default function Resume() {
             <h2>education</h2>
           </div>
           <div className="education">
-            <p>
-            UT Austin Boot Camp - Full-Stack Coding Immersive Program	2022	
+            <p><b>UT Austin Boot Camp</b><br></br><i>Full-Stack Coding Immersive Program</i> - 2022</p>
 
-            Sam Houston State University - Bachelor of Fine Arts, Photography, Cum Laude
-            </p>
+            <p><b>Sam Houston State University</b><br></br><i>Bachelor of Fine Arts - Photography - Cum Laude </i></p>
           </div>
 
-          <div>
-            <a href={resume} download className="download-button">download</a>
+          <div className="resume-button">
+            <a href={resume} download className="download-button">download résumé</a>
           </div>
         </div>
       </div>
@@ -60,4 +58,3 @@ export default function Resume() {
 }
 
 
-{/* <a href={resume} download> download</a> */}

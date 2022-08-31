@@ -232,10 +232,6 @@ textarea:focus, input:focus {
   box-shadow: 0 0 var(--black);
 }
 
-button {
-  box-shadow: 0 0 var(--black);
-}
-
 .send-button {
   justify-content: flex-end;
   display: flex;
@@ -259,6 +255,7 @@ button {
 
 .send-button input:hover {
   box-shadow: 3px 3px 2px var(--black);
+  cursor: pointer;
 }
 
 .send-button input:focus {
@@ -270,7 +267,8 @@ button {
 }
 
 .resume-container {
-  position: absolute;  
+  position: absolute; 
+  width: 100%; 
 }
 
 .engineer-title {
@@ -325,7 +323,7 @@ button {
 .experience li {
   font-size: 1.8rem;
   line-height: 125%;
-  border-bottom: 1px dotted var(--white);
+  border-bottom: 1px dotted var(--black);
   padding: 5px 0;
   list-style: none;
 }
@@ -337,6 +335,18 @@ button {
 .education-container {
   width: 33%;
   margin: 0 2vw;
+}
+
+.resume-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+}
+
+.education p {
+  font-size: 2rem;
 }
 
 .download-button {
@@ -392,9 +402,6 @@ button {
   color: var(--white);
 }
 
-.right-text {
-  text-align: right;
-}
 
 @keyframes circle {
   0% {top: 10%; left: -20%; transform: rotate(0);}

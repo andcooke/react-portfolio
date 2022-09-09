@@ -2,6 +2,8 @@
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
+  The site is deployed at: https://andcooke.github.io/react-portfolio/
+  
   ## Description
   
   This project is my portfolio. There is an about me section, a portfolio section, a contact page, and my resume.

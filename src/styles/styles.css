@@ -507,6 +507,7 @@ textarea:focus, input:focus {
     overflow-x: hidden;
     overflow: scroll;
     box-sizing: border-box;
+    min-height: 100vh;
   }
 
   body {
@@ -616,6 +617,11 @@ textarea:focus, input:focus {
   .download-button {
     position: relative;
     margin-bottom: 7rem;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
   }
 
 

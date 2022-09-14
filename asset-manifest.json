@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.b9f038dd.css",
-    "main.js": "/react-portfolio/static/js/main.fdd504a2.js",
+    "main.css": "/react-portfolio/static/css/main.4246fc2d.css",
+    "main.js": "/react-portfolio/static/js/main.eec31178.js",
     "static/media/avater-standin.png": "/react-portfolio/static/media/avater-standin.a4269f935d79015ff67c.png",
-    "static/media/Andrew Cooke Resume.pdf": "/react-portfolio/static/media/Andrew Cooke Resume.5d23051f35d32ccb6f20.pdf",
+    "static/media/Andrew Cooke Resume.pdf": "/react-portfolio/static/media/Andrew Cooke Resume.8168f587e5d398c82299.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.b9f038dd.css.map": "/react-portfolio/static/css/main.b9f038dd.css.map",
-    "main.fdd504a2.js.map": "/react-portfolio/static/js/main.fdd504a2.js.map"
+    "main.4246fc2d.css.map": "/react-portfolio/static/css/main.4246fc2d.css.map",
+    "main.eec31178.js.map": "/react-portfolio/static/js/main.eec31178.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9f038dd.css",
-    "static/js/main.fdd504a2.js"
+    "static/css/main.4246fc2d.css",
+    "static/js/main.eec31178.js"
   ]
 }

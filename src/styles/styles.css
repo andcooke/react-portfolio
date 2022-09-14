@@ -156,13 +156,13 @@ a {
 
 .project {
   background: var(--green);
-  width: 23vw;
-  height: 13vw;
+  min-width: 30rem;
+  height: 15rem;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   display: flex;
-  font-size: 2vw;
+  font-size: 2rem;
   color: var(--white);
 }
 
@@ -508,9 +508,13 @@ textarea:focus, input:focus {
 
   html, body {
     overflow-x: hidden;
+    overflow: scroll;
+    box-sizing: border-box;
   }
 
-
+  body {
+    position: relative;
+  }
 
   .header {
     width: 100%;
@@ -546,7 +550,13 @@ textarea:focus, input:focus {
     margin: 0 .5rem;
   }
 
+  .project {
+    margin: 1rem 0;
+  }
 
+  .portfolio-container:last-child {
+    margin-bottom: 7rem;
+  }
 
 
   #avatar {

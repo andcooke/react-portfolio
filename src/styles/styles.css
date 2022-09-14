@@ -61,6 +61,7 @@ a {
   font-size: 25rem;
   line-height: 100%;
   margin: 0 0;
+  margin-top: 0;
   word-spacing: 6rem;
   width: fit-content;
   position: relative;
@@ -311,10 +312,6 @@ textarea:focus, input:focus {
 .front-end > *,
 .back-end > * {
   margin: 0 2.5rem;
-}
-
-.front-end:hover .front-end::after {
-  content: "ADD";
 }
 
 .experience-container {
@@ -581,6 +578,40 @@ textarea:focus, input:focus {
   .send-button input {
     margin-top: 1rem;
     box-shadow: 0 0 0;
+  }
+
+  .resume-container {
+    position: relative;
+  }
+
+  .engineer-title h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .attributes {
+    display: block;
+    width: 95%;
+  }
+
+  .resume-header {
+    font-size: 1.5rem;
+    height: 5rem;
+    color: var(--black);
+    border-bottom: 2px dotted var(--white);
+    margin-top: 2rem;
+  }
+
+
+  .skills-container,
+  .experience-container,
+  .education-container {
+    width: 100%;
+  }
+
+  .download-button {
+    position: relative;
+    margin-bottom: 7rem;
   }
 
   #avatar {

@@ -503,3 +503,62 @@ textarea:focus, input:focus {
   filter: blur(400px);
   z-index: -9998;
 }
+
+@media screen and (max-width: 450px){
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+
+
+  .header {
+    width: 100%;
+    position: relative;
+  }
+
+  .initials{
+    font-size: 10rem;
+    margin-top: 3rem;
+  }
+
+  .navbar {
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .link-container {
+    justify-content: center;
+    display: flex;
+    padding: 0 0;
+  }
+  
+  .link-container li {
+    font-size: 2rem;
+    width: fit-content;
+    text-justify: center;
+    padding: 0 0;
+    margin: 0 .5rem;
+  }
+
+
+
+
+  #avatar {
+    display: none;
+  }
+
+  .red-circle,
+  .inner-circle,
+  .purple-circle,
+  .yellow-circle {
+    display: none;
+  }
+  
+
+}

@@ -5,37 +5,51 @@ export default function Portfolio() {
   
   let projects = [
     {
-      name: "Tech Blog",
-      link: "https://github.com/andcooke/tech-blog",
+      name: "Baes",
+      deployed: "https://loversnotfighters.herokuapp.com/",
+      github: "https://github.com/andcooke/baes",
     },
     {
       name: "The Shadow Tome",
-      link: "https://github.com/andcooke/the-shadow-tome",
-    },
-    {
-      name: "Work Day Scheduler",
-      link: "https://github.com/andcooke/work-day-scheduler",
+      deployed: "https://the-shadow-tome.herokuapp.com/",
+      github: "https://github.com/andcooke/the-shadow-tome",
     },
     {
       name: "Git Me There",
-      link: "https://github.com/andcooke/git-me-there",
+      deployed: "https://andcooke.github.io/git-me-there/",
+      github: "https://github.com/andcooke/git-me-there",
+    },
+    {
+      name: "Tech Blog",
+      deployed: "http://tech-tech-blog-blog.herokuapp.com/",
+      github: "https://github.com/andcooke/tech-blog",
+    },
+    {
+      name: "Work Day Scheduler",
+      deployed: "https://andcooke.github.io/work-day-scheduler/",
+      github: "https://github.com/andcooke/work-day-scheduler",
     },
     {
       name: "Weather Dashboard",
-      link: "https://github.com/andcooke/weather-dashboard",
+      deployed: "https://andcooke.github.io/weather-dashboard/",
+      github: "https://github.com/andcooke/weather-dashboard",
     },
-    {
-      name: "Employee Tracker",
-      link: "https://github.com/andcooke/employee-tracker",
-    }
   ]
 
   return (
       <div className="portfolio-container">
         {projects.map((item, i) => (
-          <a href={item.link}>
+          <a className="project-effect">
             <div className="project" key={i}>
-              <p>{item.name}</p>
+              <p className="project-title">{item.name}</p>
+              <div className="project-links">
+                <div className="links">
+                  <a href={item.github}>github</a>
+                </div>
+                <div className="links">
+                  <a href={item.deployed}>deployed</a>
+                </div>
+              </div>
             </div>
           </a>
       ))}
@@ -43,3 +57,15 @@ export default function Portfolio() {
 
   )
 }
+
+
+// return (
+//   <div className="portfolio-container">
+//     {projects.map((item, i) => (
+//       <a href={item.github}>
+//         <div className="project" key={i}>
+//           <p>{item.name}</p>
+//         </div>
+//       </a>
+//   ))}
+//   </div> 

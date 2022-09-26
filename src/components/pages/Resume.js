@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../images/Andrew Cooke Resume.pdf';
+import resume from '../../images/Andrew Cooke Software Developer.pdf';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact } from 'react-icons/fa';
 import { SiHandlebarsdotjs, SiMysql, SiGraphql, SiMongodb, SiSequelize, SiExpress } from 'react-icons/si';
 import { IoLogoNodejs } from 'react-icons/io';
@@ -12,7 +12,7 @@ export default function Resume() {
     <div className="resume-container">
 
       <div className="engineer-title">
-        <h2>FRONT-END DEVELOPER</h2>
+        <h2>SOFTWARE DEVELOPER</h2>
       </div>
 
       <div className="attributes">

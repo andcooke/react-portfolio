@@ -12,7 +12,7 @@ export default function Resume() {
     <div className="resume-container">
 
       <div className="engineer-title">
-        <h2>SOFTWARE ENGINEER</h2>
+        <h2>FRONT-END DEVELOPER</h2>
       </div>
 
       <div className="attributes">

@@ -72,6 +72,21 @@ a {
   z-index: 999;
 }
 
+.email {
+  font-size:6vw;
+  line-height: 100%;
+  margin: 0 0;
+  margin-top: 6vw;
+  word-spacing: 6rem;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: var(--black);
+  border-bottom: 3px dotted var(--black);
+  z-index: 999;
+}
+
 
 .navbar {
   right: 5%;
@@ -199,7 +214,7 @@ a {
 .contact-form {
   width: 50%;
   position: absolute;
-  top: 38%;
+  top: 25%;
   left: 25%;
 }
 

@@ -41,19 +41,19 @@ export default function Contact() {
   }
 
   return (
-  <form ref={form} onSubmit={sendEmail} className="contact-form">
-    <div className="user-info">
-      <input required type="text" value={user_name} name="user_name" className="name-input" id="contact-name" placeholder='name' onChange={handleChange}></input>
-      <input required type="email" value={user_email} name="user_email" className="email-input" id="contact-email" placeholder='email' onChange={handleChange}></input>
-    </div>
-    <div className="message-content">
-      <input name="subject" value={subject} className="subject-input" id="contact-subject" placeholder='subject' onChange={handleChange}></input>
-      <textarea required name="message" type="text" value={message} className="message-input" id="contact-message" placeholder='message' onChange={handleChange}></textarea>
-    </div>
-    <div className="send-button">
-      <p className= { hiddenState ? "hidden-toast" : ""}>sent! thanks!</p>
-      <input type="submit" value="send" id="send-email"/>
-    </div>
-  </form>
+    <form ref={form} onSubmit={sendEmail} className="contact-form">
+      <div className="user-info">
+        <input required type="text" value={user_name} name="user_name" className="name-input" id="contact-name" placeholder='name' onChange={handleChange}></input>
+        <input required type="email" value={user_email} name="user_email" className="email-input" id="contact-email" placeholder='email' onChange={handleChange}></input>
+      </div>
+      <div className="message-content">
+        <input name="subject" value={subject} className="subject-input" id="contact-subject" placeholder='subject' onChange={handleChange}></input>
+        <textarea required name="message" type="text" value={message} className="message-input" id="contact-message" placeholder='message' onChange={handleChange}></textarea>
+      </div>
+      <div className="send-button">
+        <p className= { hiddenState ? "hidden-toast" : ""}>sent! thanks!</p>
+        <input type="submit" value="send" id="send-email"/>
+      </div>
+    </form>
   );
 }

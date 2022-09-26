@@ -6,7 +6,8 @@ function Header({ currentPage, handlePageChange }) {
     <div className="header">
 
       <div>
-        <h1 className="initials">A. C.</h1>
+        { currentPage === 'Contact' ? <h1 className="email"><a href="mailto:andcooke@duck.com">andcooke@duck.com</a></h1>: <h1 className="initials"> A. C.</h1> }
+
       </div>
 
       <div className="navbar">

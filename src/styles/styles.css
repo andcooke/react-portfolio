@@ -182,7 +182,7 @@ a {
   color: var(--white);
 }
 
-.project-links {
+.project-info {
   display: none;
 }
 
@@ -194,15 +194,16 @@ a {
 .links a {
   border-radius: 7px;
   border: 2px solid var(--white);
-  color: var(--white);
+  color: var(--green);
+  background: var(--white);
   padding: 5px 10px;
-  margin: .75rem auto;
+  margin: .75rem .25rem;
   min-width: 8rem;
   text-align: center;
 }
 
 
-.project-effect:hover .project-links {
+.project-effect:hover .project-info {
   display: block;
 }
 

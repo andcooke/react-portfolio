@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../images/Andrew Cooke Software Developer.pdf';
+import resume from '../../images/Andrew Cooke - Software Developer.pdf';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact } from 'react-icons/fa';
 import { SiHandlebarsdotjs, SiMysql, SiGraphql, SiMongodb, SiSequelize, SiExpress } from 'react-icons/si';
 import { IoLogoNodejs } from 'react-icons/io';

@@ -23,7 +23,7 @@ html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
   /* prevents scrolling */
-  overflow-x: hidden;
+  overflow: hidden;
    
   box-sizing: border-box;
 }
@@ -185,10 +185,13 @@ a {
   cursor: pointer;
 }
 
-.test {
+.expanded-project {
   background: var(--green);
   width: 95vw;
   height: 95vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   position: absolute;
   top: 2.5vh;
   left: 2.5vw;
@@ -198,7 +201,11 @@ a {
   z-index: 9999;
 }
 
-.project-info {
+.visible {
+  display: block;
+}
+
+.hidden {
   display: none;
 }
 
@@ -218,13 +225,13 @@ a {
   text-align: center;
 }
 
-.project-effect:hover .project-info {
+/* .project-effect:hover .project-info {
   display: block;
 }
 
 .project-effect:hover .project-title {
   display: none;
-} 
+}  */
 
 
 .contact-form {

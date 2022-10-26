@@ -4,12 +4,18 @@ import React, { useState } from 'react';
 export default function Portfolio() {
 
   const [style, setStyle] = useState("project")
+  const [titleStyle, setTitleStyle] = useState("visible");
+  const [infoStyle, setInfoStyle] = useState("hidden");
 
-  const changeStyle = () => {
+  const expandProject = () => {
     if (style === "project") {
-      setStyle("test");
+      setStyle("expanded-project");
+      setTitleStyle("hidden");
+      setInfoStyle("visible");
     } else {
       setStyle("project");
+      setTitleStyle("visible");
+      setInfoStyle("hidden");
     }
   }
   
@@ -78,9 +84,9 @@ export default function Portfolio() {
     <div className="portfolio-container">
       {/* {projects.map((item, i) => ( */}
         <a className="project-effect">
-          <div className={style} onClick={changeStyle}>
-            <p className="project-title">Baes</p>
-            <div className="project-info">
+          <div className={style} onClick={expandProject}>
+            <p className={titleStyle}>Test</p>
+            <div className={infoStyle}>
               <p>Baes is an app</p>
               <div className="links">
                 <a>github</a>

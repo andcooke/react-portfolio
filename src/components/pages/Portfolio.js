@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 export default function Portfolio() {
+
+  const [style, setStyle] = useState("project")
+
+  const changeStyle = () => {
+    if (style === "project") {
+      setStyle("test");
+    } else {
+      setStyle("project");
+    }
+  }
   
   // let projects = [
   //   {
@@ -62,11 +72,13 @@ export default function Portfolio() {
 
   // )
 
+  
+
   return (
     <div className="portfolio-container">
       {/* {projects.map((item, i) => ( */}
         <a className="project-effect">
-          <div className="project">
+          <div className={style} onClick={changeStyle}>
             <p className="project-title">Baes</p>
             <div className="project-info">
               <p>Baes is an app</p>

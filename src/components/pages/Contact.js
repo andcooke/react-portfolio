@@ -29,7 +29,12 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_c01fp3m', 'template_0759zjm', form.current, 'HLScYYxkOCDwDU0SN')
+    emailjs.sendForm(
+      'service_c01fp3m',
+      'template_0759zjm',
+      form.current,
+      'HLScYYxkOCDwDU0SN'
+    )
     .then((result) => {
         console.log(result.text);
     }, (error) => {

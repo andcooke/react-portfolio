@@ -201,11 +201,16 @@ a {
   z-index: 9999;
 }
 
-.project-info {
+.project-details {
   display: flex;
   justify-content: left;
   align-items: start;
   width: 100%;
+}
+
+.project-details h3 {
+  font-size: 6rem;
+  margin: auto 0;
 }
 
 .back-button {
@@ -213,12 +218,11 @@ a {
   display: flex;
 }
 
-
-.expanded-project h3 {
-  font-size: 6rem;
-  margin: auto 0;
+.project-techs {
+  display: flex;
+  justify-content: left;
+  margin: -20px 30px;
 }
-
 
 .visible {
   display: block;

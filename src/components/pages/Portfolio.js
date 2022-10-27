@@ -90,9 +90,12 @@ export default function Portfolio() {
           <div className={style} onClick={expandProject}>
             <p className={titleStyle}>Test</p>
             <div className={infoStyle}>
-              <div className="project-info">
+              <div className="project-details">
                 <a className="back-button">{BsArrowLeftShort()}</a>
                 <h3>title</h3>
+              </div>
+              <div className="project-techs">
+                <p>React | MongoDB | GraphQL</p>
               </div>
               <div className="links">
                 <a>github</a>

@@ -178,7 +178,7 @@ a {
   height: 12rem;
   border-radius: 10px;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   display: flex;
   font-size: 2rem;
   color: var(--white);
@@ -189,8 +189,8 @@ a {
   background: var(--green);
   width: 95vw;
   height: 95vh;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center;  */
   display: flex;
   position: absolute;
   top: 2.5vh;
@@ -201,13 +201,35 @@ a {
   z-index: 9999;
 }
 
+.project-info {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  width: 100%;
+}
+
+.back-button {
+  font-size: 5rem;
+  display: flex;
+}
+
+
+.expanded-project h3 {
+  font-size: 6rem;
+  margin: auto 0;
+}
+
+
 .visible {
   display: block;
+  width: 100%;
 }
 
 .hidden {
   display: none;
 }
+
+
 
 .links {
   display: flex;

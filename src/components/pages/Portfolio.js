@@ -91,11 +91,14 @@ export default function Portfolio() {
             <p className={titleStyle}>Test</p>
             <div className={infoStyle}>
               <div className="project-details">
-                <a className="back-button">{BsArrowLeftShort()}</a>
+                <a className="back-buttongit ">{BsArrowLeftShort()}</a>
                 <h3>title</h3>
               </div>
               <div className="project-techs">
                 <p>React | MongoDB | GraphQL</p>
+              </div>
+              <div> 
+                <p>Full stack relationship app with social networking capabilities</p>
               </div>
               <div className="links">
                 <a>github</a>

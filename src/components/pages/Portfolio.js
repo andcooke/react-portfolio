@@ -29,32 +29,31 @@ export default function Portfolio() {
     }
   }
 
-
   return (
     <div className="portfolio-container">
-      {/* {projects.map((item, i) => ( */}
-        <a className="project-effect">
+      {projects.map((project, i) => (
+        <a className="project-effect" key={i}>
           <div className={style} onClick={expandProject}>
-            <p className={titleStyle}>Test</p>
+            <p className={titleStyle}>{project.name}</p>
             <div className={infoStyle}>
               <div className="project-details">
                 <a className="back-button " onClick={minimizeProject}>{BsArrowLeftShort()}</a>
-                <h3>title</h3>
+                <h3>{project.name}</h3>
               </div>
               <div className="project-techs">
-                <p>technologies</p>
+                <p>{project.technologies}</p>
               </div>
               <div className="project-description"> 
-                <p>description</p>
+                <p>{project.summary}</p>
               </div>
               <div className="links">
-                <a>github</a>
-                <a>deployed</a>
+                <a href={project.github}>github</a>
+                <a href={project.deployed}>deployed</a>
               </div>
             </div>
           </div>
         </a>
-     {/* ))} */}
+    ))}
     </div> 
   )
 }

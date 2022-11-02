@@ -202,12 +202,11 @@ a {
 .project-details {
   display: flex;
   justify-content: left;
-  align-items: start;
   width: 100%;
 }
 
 .project-details h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   margin: auto 0;
 }
 
@@ -237,8 +236,6 @@ a {
 .hidden {
   display: none;
 }
-
-
 
 .links {
   display: flex;

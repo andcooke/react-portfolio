@@ -189,8 +189,6 @@ a {
   background: var(--green);
   width: 95vw;
   height: 95vh;
-  /* align-items: center; */
-  /* justify-content: center;  */
   display: flex;
   position: absolute;
   top: 2.5vh;
@@ -222,6 +220,12 @@ a {
   display: flex;
   justify-content: left;
   margin: -20px 30px;
+}
+
+.project-description {
+  display: flex;
+  justify-content: center;
+
 }
 
 .visible {

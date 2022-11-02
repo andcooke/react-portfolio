@@ -32,7 +32,7 @@ export default function Portfolio() {
   return (
     <div className="portfolio-container">
       {projects.map((project, i) => (
-        <a className="project-effect" key={i}>
+        <a key={i}>
           <div className={style} onClick={expandProject}>
             <p className={titleStyle}>{project.name}</p>
             <div className={infoStyle}>
@@ -47,8 +47,8 @@ export default function Portfolio() {
                 <p>{project.summary}</p>
               </div>
               <div className="links">
-                <a href={project.github}>github</a>
-                <a href={project.deployed}>deployed</a>
+                <a href={project.github} target="_blank">github</a>
+                <a href={project.deployed} target="_blank">deployed</a>
               </div>
             </div>
           </div>

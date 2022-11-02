@@ -17,12 +17,49 @@ export default function Portfolio() {
       setStyle("expanded-project");
       setTitleStyle("hidden");
       setInfoStyle("visible");
-    } else {
+    }
+  }
+
+  const minimizeProject = () => {
+    if (style === "expanded-project") {
+      console.log("pizza");
       setStyle("project");
       setTitleStyle("visible");
       setInfoStyle("hidden");
     }
   }
+
+
+  return (
+    <div className="portfolio-container">
+      {/* {projects.map((item, i) => ( */}
+        <a className="project-effect">
+          <div className={style} onClick={expandProject}>
+            <p className={titleStyle}>Test</p>
+            <div className={infoStyle}>
+              <div className="project-details">
+                <a className="back-button " onClick={minimizeProject}>{BsArrowLeftShort()}</a>
+                <h3>title</h3>
+              </div>
+              <div className="project-techs">
+                <p>technologies</p>
+              </div>
+              <div className="project-description"> 
+                <p>description</p>
+              </div>
+              <div className="links">
+                <a>github</a>
+                <a>deployed</a>
+              </div>
+            </div>
+          </div>
+        </a>
+     {/* ))} */}
+    </div> 
+  )
+}
+
+
   
 
   // return (
@@ -44,39 +81,6 @@ export default function Portfolio() {
   //     </div> 
 
   // )
-
-  
-
-  return (
-    <div className="portfolio-container">
-      {/* {projects.map((item, i) => ( */}
-        <a className="project-effect">
-          <div className={style} onClick={expandProject}>
-            <p className={titleStyle}>Test</p>
-            <div className={infoStyle}>
-              <div className="project-details">
-                <a className="back-button ">{BsArrowLeftShort()}</a>
-                <h3>title</h3>
-              </div>
-              <div className="project-techs">
-                <p>technologies</p>
-              </div>
-              <div className="project-description"> 
-                <p>description</p>
-              </div>
-              <div className="links">
-                <a>github</a>
-                <a>deployed</a>
-              </div>
-            </div>
-          </div>
-        </a>
-      {/* ))} */}
-    </div> 
-
-)
-}
-
 
 // return (
 //   <div className="portfolio-container">

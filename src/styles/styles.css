@@ -606,7 +606,7 @@ textarea:focus, input:focus {
   z-index: -9998;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 620px){
 
   html, body {
     overflow-x: hidden;
@@ -657,9 +657,10 @@ textarea:focus, input:focus {
     position: relative;
     font-size: 1.75rem;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     padding-left: 0;
+    margin-bottom: 50px;
   }
 
   #avatar {
@@ -672,6 +673,18 @@ textarea:focus, input:focus {
 
   .project {
     margin: 1rem 0;
+  }
+
+  .project-details h3 {
+    font-size: 6rem;
+  }
+
+  .project-description {
+    margin: 0 30px;
+  }
+
+  .project-screenshot img{
+    display: none;
   }
 
   .portfolio-container:last-child {
@@ -711,7 +724,6 @@ textarea:focus, input:focus {
     border-bottom: 2px dotted var(--white);
     margin-top: 2rem;
   }
-
 
   .skills-container,
   .experience-container,

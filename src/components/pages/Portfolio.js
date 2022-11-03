@@ -16,13 +16,13 @@ export default function Portfolio() {
     if (style === "project") {
       setStyle("expanded-project");
       setTitleStyle("hidden");
-      setInfoStyle("visible");
+      setInfoStyle("visible")
+      
     }
   }
 
   const minimizeProject = () => {
     if (style === "expanded-project") {
-      console.log("pizza");
       setStyle("project");
       setTitleStyle("visible");
       setInfoStyle("hidden");
@@ -32,8 +32,8 @@ export default function Portfolio() {
   return (
     <div className="portfolio-container">
       {projects.map((project, i) => (
-        <a key={i}>
-          <div className={style} onClick={expandProject}>
+        <a key={i} onClick={expandProject}>
+          <div className={style}>
             <p className={titleStyle}>{project.name}</p>
             <div className={infoStyle}>
               <div className="project-details">

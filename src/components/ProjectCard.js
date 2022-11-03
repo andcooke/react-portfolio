@@ -39,6 +39,9 @@ export default function ProjectCard (project) {
           <div className="project-techs">
             <p>{project.technologies}</p>
           </div>
+          <div className="project-screenshot">
+            <img src={project.screenshot} alt={project.alt}/>
+          </div>
           <div className="project-description"> 
             <p>{project.summary}</p>
           </div>

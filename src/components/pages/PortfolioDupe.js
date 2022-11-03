@@ -14,7 +14,9 @@ export default function Portfolio() {
         technologies={project.technologies} 
         summary={project.summary} 
         github={project.github} 
-        deployed={project.deployed}/>
+        deployed={project.deployed}
+        screenshot={project.screenshot}
+        alt={project.alt}/>
       ))}
     </div> 
   )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import resume from '../../images/Andrew Cooke - Software Developer.pdf';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact } from 'react-icons/fa';
 import { SiHandlebarsdotjs, SiMysql, SiGraphql, SiMongodb, SiSequelize, SiExpress } from 'react-icons/si';
@@ -8,9 +8,18 @@ import { DiJavascript1, DiJqueryLogo, DiHeroku } from 'react-icons/di'
 
 export default function Resume() {
 
+  const [skillsHeader, setSkillsHeader] = useState('skills');
+
+  const handleMouseEnter = (label) => {
+    setSkillsHeader(label);
+  };
+
+  const handleMouseLeave = () => {
+    setSkillsHeader('skills');
+ };
+
   return (
     <div className="resume-container">
-
       <div className="engineer-title">
         <h2>SOFTWARE DEVELOPER</h2>
       </div>
@@ -18,27 +27,70 @@ export default function Resume() {
       <div className="attributes">
         <div className="skills-container">
           <div className="resume-header">
-            <h2>skills</h2>
+            <h2>{skillsHeader}</h2>
           </div>
 
           <div className="skills">
             <div className="front-end">
-              <FaHtml5/>
-              <FaCss3Alt/>
-              <DiJavascript1/>
-              <DiJqueryLogo/>
-              <FaBootstrap/>
-              <SiHandlebarsdotjs/>
-              <FaReact/>
+              <FaHtml5 
+                className="icon"
+                name="html"     
+                onMouseEnter={() => {handleMouseEnter('HTML')}}
+                onMouseLeave={handleMouseLeave}/>
+              <FaCss3Alt 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('CSS')}}
+                onMouseLeave={handleMouseLeave}/>
+              <DiJavascript1 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('JavaScript')}}
+                onMouseLeave={handleMouseLeave}/>
+              <DiJqueryLogo 
+                className="icon"                
+                onMouseEnter={() => {handleMouseEnter('jQuery')}}
+                onMouseLeave={handleMouseLeave}/>
+              <FaBootstrap 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('Bootstrap')}}
+                onMouseLeave={handleMouseLeave}/>
+              <SiHandlebarsdotjs 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('Handlebars')}}
+                onMouseLeave={handleMouseLeave}/>
+              <FaReact 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('React')}}
+                onMouseLeave={handleMouseLeave}/>
             </div>
             <div className="back-end">
-              <SiMysql/>
-              <SiSequelize/>
-              <SiGraphql/>
-              <SiMongodb/>
-              <IoLogoNodejs/>
-              <SiExpress/>
-              <DiHeroku/>
+              <SiMysql 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('MySQL')}}
+                onMouseLeave={handleMouseLeave}/>
+              <SiSequelize 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('Sequelize')}}
+                onMouseLeave={handleMouseLeave}/>
+              <SiGraphql 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('GraphQL')}}
+                onMouseLeave={handleMouseLeave}/>
+              <SiMongodb 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('MongoDB')}}
+                onMouseLeave={handleMouseLeave}/>
+              <IoLogoNodejs 
+                className="icon"                
+                onMouseEnter={() => {handleMouseEnter('Node.js')}}
+                onMouseLeave={handleMouseLeave}/>
+              <SiExpress 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('Express.js')}}
+                onMouseLeave={handleMouseLeave}/>
+              <DiHeroku 
+                className="icon"
+                onMouseEnter={() => {handleMouseEnter('Heroku')}}
+                onMouseLeave={handleMouseLeave}/>
             </div>
           </div>
         </div>

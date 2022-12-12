@@ -474,6 +474,20 @@ textarea:focus, input:focus {
   height: 35%;
 }
 
+
+.icon:hover {
+  color: var(--white);
+}
+
+/* #skills::after {
+  content: "skills";
+} */
+
+#html:hover + #skills::before{
+  content: "html";
+}
+
+
 .education p {
   font-size: 2rem;
 }
@@ -531,6 +545,7 @@ textarea:focus, input:focus {
 .footer-icons svg:hover {
   color: var(--white);
 }
+
 
 
 @keyframes circle {
@@ -750,6 +765,7 @@ textarea:focus, input:focus {
   }
   
 }
+
 
 @media screen and (min-width: 1200px){
   

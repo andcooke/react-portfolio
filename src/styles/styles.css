@@ -66,6 +66,8 @@ a {
   word-spacing: 6rem;
   width: fit-content;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
   left: 50%;
   transform: translate(-50%, 0);
   color: var(--black);
@@ -81,6 +83,8 @@ a {
   word-spacing: 6rem;
   width: fit-content;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
   left: 50%;
   transform: translate(-50%, 0);
   color: var(--black);
@@ -639,7 +643,7 @@ textarea:focus, input:focus {
     position: relative;
   }
 
-  .initials{
+  .initials {
     font-size: 10rem;
     margin-top: 3rem;
   }

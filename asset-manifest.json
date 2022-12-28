@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.0bb4c69d.css",
+    "main.css": "/react-portfolio/static/css/main.f9a7f6a1.css",
     "main.js": "/react-portfolio/static/js/main.dd01f57f.js",
     "static/media/git.png": "/react-portfolio/static/media/git.d65bf8094e26db2b51e8.png",
     "static/media/tome.png": "/react-portfolio/static/media/tome.a8cbe2108129026e0ee9.png",
@@ -11,11 +11,11 @@
     "static/media/baes.png": "/react-portfolio/static/media/baes.2d5672ea7c83dc7624b0.png",
     "static/media/Andrew Cooke - Software Developer.pdf": "/react-portfolio/static/media/Andrew Cooke - Software Developer.c47d59dcfe2ec5073c93.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.0bb4c69d.css.map": "/react-portfolio/static/css/main.0bb4c69d.css.map",
+    "main.f9a7f6a1.css.map": "/react-portfolio/static/css/main.f9a7f6a1.css.map",
     "main.dd01f57f.js.map": "/react-portfolio/static/js/main.dd01f57f.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bb4c69d.css",
+    "static/css/main.f9a7f6a1.css",
     "static/js/main.dd01f57f.js"
   ]
 }
